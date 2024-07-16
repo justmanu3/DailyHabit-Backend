@@ -24,10 +24,6 @@
     "eventarc": {
       "port": 9696
     },
-    "ui": {
-      "enabled": true,
-      "port": 4000
-    },
     "singleProjectMode": true
   },
   "firestore": {
