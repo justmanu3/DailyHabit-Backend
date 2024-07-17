@@ -16,7 +16,6 @@ app.use(express.json());
 const cors = require('cors')
 app.use(cors({origin:true}));
 app.use((req,res,next)=>{
-
     res.set("Access-Control-Allow-Origin", "*")
     next();
 });
@@ -34,9 +33,10 @@ admin.initializeApp({
 
 //api endpoints
 
-app.get('/',(req,res)=>{
+app.get('/test',(req,res)=>{
     return res.send('hello world')
 });
+
 
 const userRoute = require('./routes/user')
 app.use('/api/users', userRoute)
