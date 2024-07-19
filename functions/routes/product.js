@@ -381,7 +381,7 @@ router.post(
 
     if (endpointSecret) {
       let event;
-      
+
       try {
         event = stripe.webhooks.constructEvent(req.body, sig, endpointSecret);
       } catch (err) {
